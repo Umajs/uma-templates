@@ -1,9 +1,9 @@
 {
   "name": "app",
   "version": "0.0.2",
-  "private": true,
-  "description": "> TODO: description",
-  "author": "zhangzhihua <zhangzhihua01@58ganji.com>",
+  "private": "<%=private%>",
+  "description": "<%=description%>",
+  "author": "<%=author%>",
   "license": "ISC",
   "directories": {
     "lib": "lib",
