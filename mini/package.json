@@ -1,7 +1,6 @@
 {
   "name": "app",
   "version": "0.0.2",
-  "private": "<%=private%>",
   "description": "<%=description%>",
   "author": "<%=author%>",
   "license": "ISC",
