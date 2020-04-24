@@ -1,5 +1,5 @@
 export default {
-    'demo': {
+    '<%=pluginName%>': {
         options: {
             test: 1,
         },

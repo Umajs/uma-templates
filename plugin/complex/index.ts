@@ -8,4 +8,4 @@ const plugin = (options: {}): TPlugin => {
     }
 };
 
-export default plugin(Ursa.pluginOptions('demo'));
+export default plugin(Ursa.pluginOptions('<%=pluginName%>'));
