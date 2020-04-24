@@ -1,9 +1,8 @@
 {
-  "name": "@ursajs/plugin-demo",
-  "version": "0.1.0",
-  "private": true,
-  "description": "> TODO: description",
-  "author": "zhangzhihua <zhangzhihua01@58ganji.com>",
+  "name": "@ursajs/<%=projectName%>",
+  "version": "0.0.1",
+  "description": "<%=description%>",
+  "author": "<%=author%>",
   "license": "ISC",
   "directories": {
     "lib": "lib",
