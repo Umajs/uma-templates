@@ -28,8 +28,8 @@
     "build": "tsc"
   },
   "dependencies": {
-    "@ursajs/core": "^0.0.9",
-    "@ursajs/router": "^0.0.9",
+    "@ursajs/core": "^0.1.0",
+    "@ursajs/router": "^0.1.0",
     "koa": "^2.11.0",
     "koa-views": "^6.2.1",
     "nunjucks": "^3.2.0"
