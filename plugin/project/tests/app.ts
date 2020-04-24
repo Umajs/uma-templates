@@ -3,6 +3,7 @@ import * as shell from "shelljs";
 import Ursa from '@ursajs/core';
 import { Router } from '@ursajs/router';
 
+shell.mkdir(path.resolve(__dirname, './plugins'));
 shell.ln('-sf', path.resolve(__dirname, '../src'), path.resolve(__dirname, './plugins/<%=pluginName%>'));
 
 const ursa = Ursa.instance({
