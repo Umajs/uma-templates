@@ -17,6 +17,8 @@
     "url": "git@igit.58corp.com:node/ursa.git"
   },
   "scripts": {
+    "build": "tsc",
+    "prepublish": "npm run build",
     "app": "ts-node-dev tests/app.ts"
   },
   "dependencies": {},
