@@ -1,5 +1,5 @@
 {
-  "name": "@ursajs/<%=projectName%>",
+  "name": "@ursajs/<%=pluginName%>",
   "version": "0.0.1",
   "description": "<%=description%>",
   "author": "<%=author%>",
