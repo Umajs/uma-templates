@@ -20,7 +20,7 @@
     "url": "git+https://github.com/Ursajs/Ursa.git"
   },
   "scripts": {
-    "app": "ts-node-dev src/app.ts"
+    "app": "ts-node-dev --respawn src/app.ts"
   },
   "dependencies": {
     "@ursajs/core": "^0.1.0",

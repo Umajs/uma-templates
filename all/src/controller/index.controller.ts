@@ -7,7 +7,6 @@ import { AgeCheck } from '../decorator/AgeCheck';
 import UserService from '../service/user.service';
 
 export default class Index extends BaseController {
-
     @Service('test')
     testService: TestService
 
@@ -16,7 +15,10 @@ export default class Index extends BaseController {
 
     index() {
         console.log(this.userService.getDefaultUserAge());
-        return Result.view('index.html', { test: this.testService.return1() })
+
+        return Result.view('index.html', {
+            frameName: this.testService.returnFrameName(),
+        });
     }
 
     @Path('/reg/:name*')
@@ -27,7 +29,7 @@ export default class Index extends BaseController {
 
     @Path({
         value: ['/submit', '/yu/:id'],
-        method: RequestMethod.POST
+        method: RequestMethod.POST,
     })
     submit() {
         // this.ctx.request.body
@@ -46,7 +48,7 @@ export default class Index extends BaseController {
     }
 
     @Path({
-        method: RequestMethod.POST
+        method: RequestMethod.POST,
     })
     onlyGet() {
         return Result.send('this method only can post');
@@ -65,6 +67,7 @@ export default class Index extends BaseController {
     @Path('/stream')
     stream() {
         const rs = fs.createReadStream(path.resolve(__dirname, './template.controller.ts'));
+
         return Result.stream(rs, 'controller.ts');
     }
 }

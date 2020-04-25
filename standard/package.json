@@ -22,14 +22,15 @@
   "scripts": {
     "lint": "eslint src --ext .ts",
     "lint-w": "esw src --clear --color -w --ext .ts",
-    "app": "ts-node-dev src/app.ts",
+    "app": "ts-node-dev --respawn src/app.ts",
     "start": "run-p app lint-w",
     "prebuild": "npm run lint",
     "build": "tsc"
   },
   "dependencies": {
-    "@ursajs/core": "^0.1.0",
-    "@ursajs/router": "^0.1.0",
+    "@ursajs/core": "^0.1.2",
+    "@ursajs/router": "^0.1.2",
+    "@ursajs/plugin-status": "^0.1.1",
     "koa": "^2.11.0",
     "koa-views": "^6.2.1",
     "nunjucks": "^3.2.0"

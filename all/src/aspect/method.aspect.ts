@@ -1,5 +1,6 @@
-import { IAspect, IJoinPoint, IProceedJoinPoint, Result } from '@ursajs/core';
+import { IAspect, IJoinPoint, IProceedJoinPoint } from '@ursajs/core';
 
+/* eslint-disable */
 export default class implements IAspect {
     before() {
         console.log('method: this is before');
@@ -9,7 +10,9 @@ export default class implements IAspect {
     }
     async around(proceedPoint: IProceedJoinPoint<any>) {
         console.log('method: this is around');
+
         const result = await proceedPoint.proceed();
+
         console.log('method: this is around after');
 
         return result;

@@ -20,6 +20,7 @@ module.exports = {
         'no-bitwise': ['error', {
             'allow': ['~']
         }],
+        'import/extensions': 0,
         'import/no-unresolved': 0,
         'import/prefer-default-export': 0,
         'import/no-dynamic-require': 0,

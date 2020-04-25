@@ -1,4 +1,5 @@
 export default {
+    status: true,
     views: {
         enable: true,
         name: 'views',

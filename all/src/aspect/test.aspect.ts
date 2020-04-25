@@ -1,5 +1,6 @@
 import { IAspect, IJoinPoint } from '@ursajs/core';
 
+/* eslint-disable */
 export default class implements IAspect {
     before() {
         console.log('test: this is before');

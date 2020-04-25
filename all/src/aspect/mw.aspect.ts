@@ -1,7 +1,6 @@
 import { IAspect, middlewareToAround } from '@ursajs/core';
 
-
-
+/* eslint-disable */
 export default class implements IAspect {
     async around({ target, proceed, args }) {
         const result = await middlewareToAround(async (ctx, next) => {
