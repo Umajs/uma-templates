@@ -60,12 +60,12 @@ export default class Index extends BaseController {
     }
 
     @Path('/download')
-    download() {
+    downFile() {
         return Result.download('/src/controller/template.controller.ts');
     }
 
     @Path('/stream')
-    stream() {
+    donwStream() {
         const rs = fs.createReadStream(path.resolve(__dirname, './template.controller.ts'));
 
         return Result.stream(rs, 'controller.ts');
