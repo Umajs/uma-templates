@@ -1,5 +1,12 @@
 /* eslint-disable quote-props */
 export default {
+    'static': {
+        options: {
+            root: './static',
+            opts: {
+            },
+        },
+    },
     'status': true,
     'test': true,
     'views': {
