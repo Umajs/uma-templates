@@ -3,9 +3,12 @@ export default {
     'static': {
         options: {
             root: './static',
+            opts: {
+            },
         },
     },
     'status': true,
+    'test': true,
     'views': {
         enable: true,
         name: 'views',
@@ -16,5 +19,4 @@ export default {
             },
         },
     },
-    'test': true,
 };

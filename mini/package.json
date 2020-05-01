@@ -23,8 +23,8 @@
     "app": "ts-node-dev --respawn src/app.ts"
   },
   "dependencies": {
-    "@ursajs/core": "^0.1.0",
-    "@ursajs/router": "^0.1.0",
+    "@ursajs/core": "^0.1.4",
+    "@ursajs/router": "^0.1.4",
     "koa": "^2.11.0"
   },
   "devDependencies": {
