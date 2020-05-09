@@ -1,4 +1,4 @@
-import { IAspect, IJoinPoint, IProceedJoinPoint } from '@ursajs/core';
+import { IAspect, IJoinPoint, IProceedJoinPoint } from '@umajs/core';
 
 /* eslint-disable */
 export default class implements IAspect {

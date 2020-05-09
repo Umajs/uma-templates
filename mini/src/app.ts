@@ -1,10 +1,10 @@
-import Ursa from '@ursajs/core';
-import { Router } from '@ursajs/router';
+import Uma from '@umajs/core';
+import { Router } from '@umajs/router';
 
-const ursa = Ursa.instance({
+const uma = Uma.instance({
     Router,
     ROOT: __dirname,
     env: process.argv.indexOf('production') > -1 ? 'production' : 'development',
 });
 
-ursa.start(8058);
+uma.start(8058);

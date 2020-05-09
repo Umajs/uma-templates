@@ -1,6 +1,6 @@
-import { Ursa, TPlugin } from "@ursajs/core";
+import { Uma, TPlugin } from "@umajs/core";
 
-export default (ursa: Ursa, options: any = {}): TPlugin => {
+export default (uma: Uma, options: any = {}): TPlugin => {
     console.log(options);
 
     return {

@@ -17,14 +17,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Ursajs/Ursa.git"
+    "url": "git+https://github.com/Umajs/Uma.git"
   },
   "scripts": {
     "app": "ts-node-dev --respawn src/app.ts"
   },
   "dependencies": {
-    "@ursajs/core": "^0.1.4",
-    "@ursajs/router": "^0.1.4",
+    "@umajs/core": "^0.1.0",
+    "@umajs/router": "^0.1.0",
     "koa": "^2.11.0"
   },
   "devDependencies": {

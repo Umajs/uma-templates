@@ -1,2 +1,2 @@
-# ursa-templates
-ursa cli templates
+# uma-templates
+uma cli templates

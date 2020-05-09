@@ -1,4 +1,4 @@
-import { IContext } from '@ursajs/core';
+import { IContext } from '@umajs/core';
 
 /* eslint-disable no-underscore-dangle */
 export default {

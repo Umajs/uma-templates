@@ -1,4 +1,4 @@
-import { IAspect, middlewareToAround } from '@ursajs/core';
+import { IAspect, middlewareToAround } from '@umajs/core';
 
 /* eslint-disable */
 export default class implements IAspect {

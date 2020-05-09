@@ -1,16 +1,16 @@
 import * as path from 'path';
 import * as shell from "shelljs";
-import Ursa from '@ursajs/core';
-import { Router } from '@ursajs/router';
+import Uma from '@umajs/core';
+import { Router } from '@umajs/router';
 
 shell.mkdir(path.resolve(__dirname, './plugins'));
 shell.ln('-sf', path.resolve(__dirname, '../src'), path.resolve(__dirname, './plugins/<%=pluginName%>'));
 
-const ursa = Ursa.instance({
+const uma = Uma.instance({
     Router,
     bodyParser: { multipart: true },
     ROOT: __dirname,
     env: process.argv.indexOf('production') > -1 ? 'production' : 'development',
 });
 
-ursa.start(8058);
+uma.start(8058);

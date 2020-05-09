@@ -1,4 +1,4 @@
-import { BaseController, Result } from '@ursajs/core';
+import { BaseController, Result } from '@umajs/core';
 
 export default class Index extends BaseController {
 

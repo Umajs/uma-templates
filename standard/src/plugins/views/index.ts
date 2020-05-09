@@ -1,6 +1,6 @@
 import * as Koa from 'koa';
 import * as views from 'koa-views';
 
-import { Ursa } from '@ursajs/core';
+import { Uma } from '@umajs/core';
 
-export default (ursa: Ursa, options: any = {}): Koa.Middleware => views(options.root, options.opts);
+export default (uma: Uma, options: any = {}): Koa.Middleware => views(options.root, options.opts);
