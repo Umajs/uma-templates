@@ -1,4 +1,4 @@
-export default function (template) {
+export default function en(template: Function) {
     return {
         hi: '很高兴遇见你!',
         empty: '',
