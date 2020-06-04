@@ -20,11 +20,14 @@
     "url": "git+https://github.com/Umajs/Uma.git"
   },
   "scripts": {
-    "app": "ts-node-dev --respawn src/app.ts"
+    "dev": "ts-node-dev --respawn src/app.ts",
+    "build": "tsc",
+    "preprod": "npm run build",
+    "prod": "node app/app.js"
   },
   "dependencies": {
-    "@umajs/core": "^0.1.0",
-    "@umajs/router": "^0.1.0",
+    "@umajs/core": "^0.1.1",
+    "@umajs/router": "^0.1.1",
     "koa": "^2.11.0"
   },
   "devDependencies": {

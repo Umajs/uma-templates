@@ -22,17 +22,19 @@
   "scripts": {
     "lint": "eslint src --ext .ts",
     "lint-w": "esw src --clear --color -w --ext .ts",
-    "app": "ts-node-dev --respawn src/app.ts",
-    "start": "run-p app lint-w",
+    "dev": "ts-node-dev --respawn src/app.ts",
+    "start": "run-p dev lint-w",
     "prebuild": "npm run lint",
-    "build": "tsc"
+    "build": "tsc",
+    "preprod": "npm run build",
+    "prod": "node app/app.js"
   },
   "dependencies": {
-    "@umajs/core": "^0.1.0",
-    "@umajs/plugin-i18n": "^0.1.0",
-    "@umajs/plugin-static": "^0.1.0",
-    "@umajs/plugin-status": "^0.1.0",
-    "@umajs/router": "^0.1.0",
+    "@umajs/core": "^0.1.1",
+    "@umajs/plugin-i18n": "^0.1.1",
+    "@umajs/plugin-static": "^0.1.1",
+    "@umajs/plugin-status": "^0.1.1",
+    "@umajs/router": "^0.1.1",
     "koa": "^2.11.0",
     "koa-static": "^5.0.0",
     "koa-views": "^6.2.1",

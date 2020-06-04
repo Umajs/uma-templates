@@ -1,6 +1,8 @@
 import { Uma, TPlugin } from "@umajs/core";
 
-export default (uma: Uma, options: any = {}): TPlugin => {
+export type Options = {};
+
+export default (uma: Uma, options: Options = {}): TPlugin => {
     console.log(options);
 
     return {
