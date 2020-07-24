@@ -27,7 +27,7 @@
     "prebuild": "npm run lint",
     "build": "tsc",
     "preprod": "npm run build",
-    "prod": "node app/app.js"
+    "prod": "node app/app.js --production"
   },
   "dependencies": {
     "@umajs/core": "^0.1.1",
