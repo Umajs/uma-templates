@@ -30,11 +30,11 @@
     "prod": "node app/app.js --production"
   },
   "dependencies": {
-    "@umajs/core": "^0.1.1",
-    "@umajs/plugin-i18n": "^0.1.1",
-    "@umajs/plugin-static": "^0.1.1",
-    "@umajs/plugin-status": "^0.1.1",
-    "@umajs/router": "^0.1.1",
+    "@umajs/core": "^0.1.10",
+    "@umajs/plugin-i18n": "^0.1.9",
+    "@umajs/plugin-static": "^0.1.9",
+    "@umajs/plugin-status": "^0.1.9",
+    "@umajs/router": "^0.1.9",
     "koa": "^2.11.0",
     "koa-static": "^5.0.0",
     "koa-views": "^6.2.1",
