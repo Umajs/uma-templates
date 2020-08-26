@@ -3,7 +3,9 @@ import * as shell from "shelljs";
 import Uma from '@umajs/core';
 import { Router } from '@umajs/router';
 
-shell.mkdir(path.resolve(__dirname, './plugins'));
+const pluginDir = path.resolve(__dirname, './plugins');
+shell.rm(pluginDir);
+shell.mkdir(pluginDir);
 shell.ln('-sf', path.resolve(__dirname, '../src'), path.resolve(__dirname, './plugins/<%=pluginName%>'));
 
 const uma = Uma.instance({
