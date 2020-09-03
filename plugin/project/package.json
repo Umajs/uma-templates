@@ -20,12 +20,11 @@
   "scripts": {
     "build": "tsc",
     "prepublish": "npm run build",
-    "app": "ts-node-dev tests/app.ts"
+    "app": "ts-node-dev --respawn src/app.ts"
   },
   "dependencies": {},
   "devDependencies": {
     "@types/koa": "^2.0.48",
-    "@types/koa-views": "^2.0.3",
     "@types/shelljs": "^0.8.7",
     "@umajs/core": "^0.1.0",
     "@umajs/router": "^0.1.0",
