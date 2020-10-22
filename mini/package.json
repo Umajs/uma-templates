@@ -26,8 +26,8 @@
     "prod": "node app/app.js --production"
   },
   "dependencies": {
-    "@umajs/core": "^1.0.0",
-    "@umajs/router": "^1.0.0",
+    "@umajs/core": "^1.1.0",
+    "@umajs/router": "^1.1.0",
     "koa": "^2.11.0"
   },
   "devDependencies": {
