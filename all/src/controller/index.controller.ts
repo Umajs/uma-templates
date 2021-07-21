@@ -12,7 +12,7 @@ export default class Index extends BaseController {
 
     @Service('user')
     userService: UserService;
-
+    @Path('/')
     index() {
         console.log(this.userService.getDefaultUserAge());
 
