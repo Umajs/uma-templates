@@ -32,7 +32,7 @@
   "dependencies": {
     "@umajs/core": "^1.2.3",
     "@umajs/plugin-logger": "^0.1.1",
-    "@umajs/plugin-react-ssr": "^1.1.0",
+    "@umajs/plugin-react-ssr": "^1.2.1",
     "@umajs/plugin-views": "^1.2.3",
     "@umajs/router": "^1.2.3",
     "koa": "^2.11.0",
