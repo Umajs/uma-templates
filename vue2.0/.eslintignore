@@ -1,0 +1,4 @@
+dist
+.ssr
+node_modules
+app

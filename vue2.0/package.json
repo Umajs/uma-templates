@@ -1,0 +1,63 @@
+{
+  "name": "app",
+  "version": "0.0.2",
+  "description": "<%=description%>",
+  "author": "<%=author%>",
+  "license": "ISC",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib",
+    "index.d.ts"
+  ],
+  "publishConfig": {
+    "registry": "http://registry.npmjs.org"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Umajs/Uma.git"
+  },
+  "scripts": {
+    "fix:src": "npx eslint src --fix --ext .ts",
+    "fix:web": "npx eslint web --fix --ext .ts,js,.vue",
+    "start": "ts-node-dev --respawn src/app.ts",
+    "build": "tsc && ssr build",
+    "analyzer": "ssr analyzer",
+    "fix": "npm run fix:src && npm run fix:web",
+    "postinstall": "npm run fix && npm run build",
+    "preprod": "npm run build",
+    "prod": "node app/app.js --production"
+  },
+  "dependencies": {
+    "@umajs/core": "^1.2.3",
+    "@umajs/plugin-vue-ssr": "^1.2.2",
+    "@umajs/router": "^1.2.3",
+    "ant-design-vue": "^1.7.6",
+    "babel-plugin-import": "^1.13.3",
+    "element-ui": "^2.15.3",
+    "koa": "^2.11.0",
+    "vue": "^2.6.14",
+    "vue-codemirror": "^4.0.6",
+    "vue-no-ssr": "^1.1.1",
+    "vue-router": "^3.5.2",
+    "vuex": "^3.6.2"
+  },
+  "devDependencies": {
+    "@types/koa": "^2.0.48",
+    "@typescript-eslint/eslint-plugin": "^4.22.1",
+    "@typescript-eslint/parser": "^4.22.1",
+    "babel-plugin-component": "^1.1.1",
+    "eslint": "^7.26.0",
+    "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-prettier": "^3.4.0",
+    "npm-run-all": "^4.1.5",
+    "prettier": "^2.3.0",
+    "ts-node": "^8.2.0",
+    "ts-node-dev": "^1.0.0-pre.32",
+    "typescript": "^3.2.2",
+    "vue-eslint-parser": "^7.8.0"
+  }
+}
