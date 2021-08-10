@@ -1,8 +1,8 @@
 {
   "name": "app",
   "version": "0.0.2",
-  "description": "umajs-react-ssr",
-  "author": "dazjean",
+  "description": "<%=description%>",
+  "author": "<%=author%>",
   "license": "ISC",
   "directories": {
     "lib": "lib",
