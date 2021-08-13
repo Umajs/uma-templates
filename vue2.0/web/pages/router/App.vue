@@ -60,14 +60,14 @@ export default {
         return {
             SrejsImg,
             cmOptions: {
-        	mode: 'text/javascript',
+                mode: 'text/javascript',
                 tabSize: 4,
                 theme: 'base16-dark',
                 readOnly: true,
                 lineNumbers: true,
                 line: true,
                 height: 'auto',
-     	  },
+     	      },
             codeIndex: `
 import App from './App.vue';
 import About from './about.vue';

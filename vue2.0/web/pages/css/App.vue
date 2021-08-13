@@ -62,13 +62,13 @@
 </template>
 
 <script>
+import NoSSR from 'vue-no-ssr';
 import '@/common.less';
 import './index.less';
 import styles from './index.module.less';
 import SrejsImg from '@/images/Umajs-vue-ssr.png';
 import 'codemirror/lib/codemirror.css';
 import 'codemirror/theme/base16-dark.css';
-import NoSSR from 'vue-no-ssr';
 
 export default {
     components: {
@@ -81,14 +81,14 @@ export default {
             styles,
             SrejsImg,
             cmOptions: {
-        	mode: 'text/javascript',
+                mode: 'text/javascript',
                 tabSize: 4,
                 theme: 'base16-dark',
                 readOnly: true,
                 lineNumbers: true,
                 line: true,
                 height: 'auto',
-     	},
+            },
             scoped: `
 <template>
     <p class="scoped">

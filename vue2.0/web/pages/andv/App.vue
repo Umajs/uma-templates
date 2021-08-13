@@ -104,76 +104,78 @@
 </template>
 <script>
 const columns = [
-  {
-    dataIndex: 'name',
-    key: 'name',
-    slots: { title: 'customTitle' },
-    scopedSlots: { customRender: 'name' },
-  },
-  {
-    title: 'Age',
-    dataIndex: 'age',
-    key: 'age',
-  },
-  {
-    title: 'Address',
-    dataIndex: 'address',
-    key: 'address',
-  },
-  {
-    title: 'Tags',
-    key: 'tags',
-    dataIndex: 'tags',
-    scopedSlots: { customRender: 'tags' },
-  },
-  {
-    title: 'Action',
-    key: 'action',
-    scopedSlots: { customRender: 'action' },
-  },
+    {
+        dataIndex: 'name',
+        key: 'name',
+        slots: { title: 'customTitle' },
+        scopedSlots: { customRender: 'name' },
+    },
+    {
+        title: 'Age',
+        dataIndex: 'age',
+        key: 'age',
+    },
+    {
+        title: 'Address',
+        dataIndex: 'address',
+        key: 'address',
+    },
+    {
+        title: 'Tags',
+        key: 'tags',
+        dataIndex: 'tags',
+        scopedSlots: { customRender: 'tags' },
+    },
+    {
+        title: 'Action',
+        key: 'action',
+        scopedSlots: { customRender: 'action' },
+    },
 ];
 
 const data = [
-  {
-    key: '1',
-    name: 'John Brown',
-    age: 32,
-    address: 'New York No. 1 Lake Park',
-    tags: ['nice', 'developer'],
-  },
-  {
-    key: '2',
-    name: 'Jim Green',
-    age: 42,
-    address: 'London No. 1 Lake Park',
-    tags: ['loser'],
-  },
-  {
-    key: '3',
-    name: 'Joe Black',
-    age: 32,
-    address: 'Sidney No. 1 Lake Park',
-    tags: ['cool', 'teacher'],
-  },
+    {
+        key: '1',
+        name: 'John Brown',
+        age: 32,
+        address: 'New York No. 1 Lake Park',
+        tags: ['nice', 'developer'],
+    },
+    {
+        key: '2',
+        name: 'Jim Green',
+        age: 42,
+        address: 'London No. 1 Lake Park',
+        tags: ['loser'],
+    },
+    {
+        key: '3',
+        name: 'Joe Black',
+        age: 32,
+        address: 'Sidney No. 1 Lake Park',
+        tags: ['cool', 'teacher'],
+    },
 ];
+
 export default {
-  data() {
-    return {
-      rootSubmenuKeys: ['sub1', 'sub2', 'sub4'],
-      openKeys: ['sub1'],
-      data,
-      columns
-    };
-  },
-  methods: {
-    onOpenChange(openKeys) {
-      const latestOpenKey = openKeys.find(key => this.openKeys.indexOf(key) === -1);
-      if (this.rootSubmenuKeys.indexOf(latestOpenKey) === -1) {
-        this.openKeys = openKeys;
-      } else {
-        this.openKeys = latestOpenKey ? [latestOpenKey] : [];
-      }
-    }
-  },
+    data() {
+        return {
+            rootSubmenuKeys: ['sub1', 'sub2', 'sub4'],
+            openKeys: ['sub1'],
+            data,
+            columns,
+        };
+    },
+    methods: {
+        onOpenChange(openKeys) {
+            const latestOpenKey = openKeys.find((key) => this.openKeys.indexOf(key) === -1);
+
+            if (this.rootSubmenuKeys.indexOf(latestOpenKey) === -1) {
+                this.openKeys = openKeys;
+            } else {
+                this.openKeys = latestOpenKey ? [latestOpenKey] : [];
+            }
+        },
+    },
 };
 </script>

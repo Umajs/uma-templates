@@ -1,11 +1,11 @@
+/* eslint-disable global-require */
 import Vue from 'vue';
+import NoSSR from 'vue-no-ssr';
+import 'codemirror/lib/codemirror.css';
+import 'codemirror/theme/base16-dark.css';
 import App from './App.vue';
 import About from './about.vue';
 import Home from './home.vue';
-
-import 'codemirror/lib/codemirror.css';
-import 'codemirror/theme/base16-dark.css';
-import NoSSR from 'vue-no-ssr';
 
 Vue.use(NoSSR);
 if (typeof window !== 'undefined') {
