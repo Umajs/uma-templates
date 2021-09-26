@@ -32,7 +32,7 @@
   },
   "dependencies": {
     "@umajs/core": "^1.2.3",
-    "@umajs/plugin-vue-ssr": "^1.2.2",
+    "@umajs/plugin-vue-ssr": "^1.2.8",
     "@umajs/router": "^1.2.3",
     "ant-design-vue": "^1.7.6",
     "babel-plugin-import": "^1.13.3",
