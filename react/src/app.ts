@@ -4,6 +4,7 @@ import { Router } from '@umajs/router';
 const uma = Uma.instance({
     Router,
     ROOT: __dirname,
+    bodyParser: { multipart: true },
     env: process.env.NODE_ENV || process.argv.indexOf('--production') > -1 ? 'production' : 'development',
 });
 

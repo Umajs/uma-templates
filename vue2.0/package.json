@@ -13,7 +13,7 @@
     "index.d.ts"
   ],
   "publishConfig": {
-    "registry": "http://registry.npmjs.org"
+    "registry": "https://registry.npmjs.org"
   },
   "repository": {
     "type": "git",
@@ -31,9 +31,9 @@
     "prod": "node app/app.js --production"
   },
   "dependencies": {
-    "@umajs/core": "^1.2.3",
-    "@umajs/plugin-vue-ssr": "^1.2.8",
-    "@umajs/router": "^1.2.3",
+    "@umajs/core": "^2.0.1",
+    "@umajs/plugin-vue-ssr": "^2.0.0",
+    "@umajs/router": "^2.0.1",
     "ant-design-vue": "^1.7.6",
     "babel-plugin-import": "^1.13.3",
     "element-ui": "^2.15.3",

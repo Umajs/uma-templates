@@ -13,7 +13,7 @@
     "index.d.ts"
   ],
   "publishConfig": {
-    "registry": "http://registry.npmjs.org"
+    "registry": "https://registry.npmjs.org"
   },
   "repository": {
     "type": "git",
@@ -26,8 +26,8 @@
     "prod": "node app/app.js --production"
   },
   "dependencies": {
-    "@umajs/core": "^1.2.3",
-    "@umajs/router": "^1.2.3",
+    "@umajs/core": "^2.0.1",
+    "@umajs/router": "^2.0.1",
     "koa": "^2.11.0"
   },
   "devDependencies": {

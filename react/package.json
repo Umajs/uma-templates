@@ -13,7 +13,7 @@
     "index.d.ts"
   ],
   "publishConfig": {
-    "registry": "http://registry.npmjs.org"
+    "registry": "https://registry.npmjs.org"
   },
   "repository": {
     "type": "git",
@@ -30,11 +30,11 @@
     "prod": "node app/app.js --production"
   },
   "dependencies": {
-    "@umajs/core": "^1.2.3",
+    "@umajs/core": "^2.0.1",
     "@umajs/plugin-logger": "^0.1.1",
-    "@umajs/plugin-react-ssr": "^1.2.7",
-    "@umajs/plugin-views": "^1.2.3",
-    "@umajs/router": "^1.2.3",
+    "@umajs/plugin-react-ssr": "^2.0.0",
+    "@umajs/plugin-views": "^2.0.1",
+    "@umajs/router": "^2.0.1",
     "koa": "^2.11.0",
     "nunjucks": "^3.2.3",
     "react": "^17.0.2",

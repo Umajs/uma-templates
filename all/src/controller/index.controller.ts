@@ -1,16 +1,17 @@
 import * as fs from 'fs';
 import * as path from 'path';
-import { BaseController, Path, Private, Param, Query, RequestMethod, Aspect, Service, Result } from '@umajs/core';
+import { BaseController, Path, Param, Query, RequestMethod, Around, Service, Result } from '@umajs/core';
 
 import TestService from '../service/test.service';
 import { AgeCheck } from '../decorator/AgeCheck';
 import UserService from '../service/user.service';
+import { method } from './../aspect/test.aspect';
 
 export default class Index extends BaseController {
-    @Service('test')
+    @Service(TestService)
     testService: TestService
 
-    @Service('user')
+    @Service(UserService)
     userService: UserService;
     @Path('/')
     index() {
@@ -22,7 +23,7 @@ export default class Index extends BaseController {
     }
 
     @Path('/reg/:name*')
-    @Aspect.around('test')
+    @Around(method)
     reg(@AgeCheck('age') age: number, @Param('name') name: string) {
         return Result.send(`this is reg router. ${name} ${age}`);
     }
@@ -40,11 +41,6 @@ export default class Index extends BaseController {
     @Path('/test', '/static/test2')
     test() {
         return Result.send('this is static router');
-    }
-
-    @Private
-    inline() {
-        return Result.send('this is private router');
     }
 
     @Path({
