@@ -31,6 +31,7 @@
     "prod": "node app/app.js --production"
   },
   "dependencies": {
+    "@umajs/arg-decorator": "^2.0.1",
     "@umajs/core": "^2.0.1",
     "@umajs/plugin-vue-ssr": "^2.0.0",
     "@umajs/router": "^2.0.1",

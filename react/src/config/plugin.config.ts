@@ -36,5 +36,5 @@ export default <{ [key: string]: TPluginConfig }>{
             warnLogName: 'warnlogger.log', // warn级别日志文件名
             allowDebugAtProd: true, // 是否允许打印debug日志
         },
-    }
+    },
 };

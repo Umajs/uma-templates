@@ -1,5 +1,6 @@
 import { BaseController, Path } from '@umajs/core';
 import { Result } from '@umajs/plugin-vue-ssr';
+import { isNumber, Param } from '@umajs/arg-decorator';
 
 export default class Index extends BaseController {
     @Path('/')
@@ -45,12 +46,12 @@ export default class Index extends BaseController {
     }
 
     @Path('/vuex')
-    vuex() {
+    vuex(@isNumber('count', '参数必须为数字类型') count:number) {
         return Result.vue('vuex', { title: 'umajs-vue-ssr',
             keywords: 'umajs vue ssr',
             description: 'umajs-vue-ssr是基于umajs+vue同构的解决方案，适用于SPA和MPA应用程序的开发，支持SSR和CSR模式动态切换！',
             state: {
-                count: 200,
+                count: count || 200,
             },
         });
     }
@@ -59,17 +60,17 @@ export default class Index extends BaseController {
     andv() {
         return Result.vue('andv', { title: 'umajs-vue-ssr',
             keywords: 'umajs vue ssr',
-            description: 'umajs-vue-ssr是基于umajs+vue同构的解决方案，适用于SPA和MPA应用程序的开发，支持SSR和CSR模式动态切换！'
+            description: 'umajs-vue-ssr是基于umajs+vue同构的解决方案，适用于SPA和MPA应用程序的开发，支持SSR和CSR模式动态切换！',
         });
     }
 
     @Path('/router', '/router/:path')
-    router() {
+    router(@Param('path') path:string) {
         return Result.vue('router', {
             title: 'Vue-router',
             keywords: 'umajs vue ssr',
-            home: 'hi 我是首页',
-            about: 'hi 我是介绍页',
+            home: `hi 我是首页${path}`,
+            about: `hi 我是介绍页${path}`,
             description: 'umajs-vue-ssr是基于umajs+vue同构的解决方案，适用于SPA和MPA应用程序的开发，支持SSR和CSR模式动态切换！',
         });
     }

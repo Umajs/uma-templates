@@ -26,6 +26,7 @@
     "prod": "node app/app.js --production"
   },
   "dependencies": {
+    "@umajs/arg-decorator": "^2.0.1",
     "@umajs/core": "^2.0.1",
     "@umajs/router": "^2.0.1",
     "koa": "^2.11.0"

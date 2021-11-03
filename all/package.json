@@ -30,6 +30,7 @@
     "prod": "node app/app.js --production"
   },
   "dependencies": {
+    "@umajs/arg-decorator": "^2.0.1",
     "@umajs/core": "^2.0.1",
     "@umajs/plugin-i18n": "^2.0.1",
     "@umajs/plugin-static": "^2.0.1",

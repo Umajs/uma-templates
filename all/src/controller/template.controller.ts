@@ -1,4 +1,5 @@
-import { BaseController, Path, Around, Query, Result, Param } from '@umajs/core';
+import { BaseController, Path, Around, Result } from '@umajs/core';
+import { Query, Param } from '@umajs/arg-decorator';
 import { AgeCheck } from '../decorator/AgeCheck';
 
 import { method } from '../aspect/test.aspect';

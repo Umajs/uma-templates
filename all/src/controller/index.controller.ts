@@ -1,11 +1,12 @@
 import * as fs from 'fs';
 import * as path from 'path';
-import { BaseController, Path, Param, Query, RequestMethod, Around, Service, Result } from '@umajs/core';
+import { BaseController, Path, RequestMethod, Around, Service, Result } from '@umajs/core';
+import { Query, Param, Body } from '@umajs/arg-decorator';
 
 import TestService from '../service/test.service';
 import { AgeCheck } from '../decorator/AgeCheck';
 import UserService from '../service/user.service';
-import { method } from './../aspect/test.aspect';
+import { method } from '../aspect/test.aspect';
 
 export default class Index extends BaseController {
     @Service(TestService)
@@ -13,6 +14,7 @@ export default class Index extends BaseController {
 
     @Service(UserService)
     userService: UserService;
+
     @Path('/')
     index() {
         console.log(this.userService.getDefaultUserAge());
@@ -32,9 +34,11 @@ export default class Index extends BaseController {
         value: ['/submit', '/yu/:id'],
         method: RequestMethod.POST,
     })
-    submit() {
+    submit(@Body() body:{username:string, passwords:string}) {
         // this.ctx.request.body
         // this.ctx.request.files
+        console.log(body);
+
         return Result.send('submit success');
     }
 

@@ -1,11 +1,13 @@
 import { BaseController, Result ,Path} from '@umajs/core';
+import { Query } from '@umajs/arg-decorator';
+
 
 export default class Index extends BaseController {
     @Path('/')
-    index() {
+    index(@Query('id') id:string) {
         return Result.json({
             msg: 'success',
-            data: 'this is data',
+            data: 'this is query data '+ id,
         });
     }
 }
