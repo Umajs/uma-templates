@@ -26,9 +26,9 @@
     "prod": "node app/app.js --production"
   },
   "dependencies": {
-    "@umajs/arg-decorator": "^2.0.4-alpha.0",
-    "@umajs/core": "^2.0.4-alpha.0",
-    "@umajs/router": "^2.0.4-alpha.0",
+    "@umajs/arg-decorator": "^2.0.5",
+    "@umajs/core": "^2.0.5",
+    "@umajs/router": "^2.0.5",
     "koa": "^2.11.0"
   },
   "devDependencies": {
